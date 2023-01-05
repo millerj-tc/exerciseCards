@@ -1,0 +1,60 @@
+[base_folder]=C:\nandeck(1)
+
+HTMLIMAGE = 1, bu&,"cardTemplateImages\burpee.png",.9,.9,PM
+HTMLIMAGE = 1, xsu&,"cardTemplateImages\xsu.png",.9,.9,PM
+HTMLIMAGE = 1, jj&,"cardTemplateImages\jj.png",.9,.9,PM
+HTMLIMAGE = 1, pu&,"cardTemplateImages\pu.png",.9,.9,PM
+HTMLIMAGE = 1, lng&,"cardTemplateImages\lunge.png",.9,.9,PM
+HTMLIMAGE = 1, dpu&,"cardTemplateImages\diamondpu.png",.9,.9,PM
+
+
+
+; project ID = 2587359535
+
+LINKMULTI = num
+LINKNEW = <br>
+LINKFILTER = Inc <> ""
+LINK ="C:\Users\16515\Downloads\exerciseCards.xlsx"
+
+;VISUAL = ,10,10
+
+
+
+FONT = Arial, 16,F , #000000
+
+FONT = Arial, 22,F , #000000
+TEXT = , [Name], 2%, 2%, 96%, 8%
+HTMLFONT = awaken, Arial, 22, , #000000
+HTMLFONT = awakenWP, Arial, 20, , #000000,center
+HTMLFONT = awakenLittle, Arial, 5.5, , #000000, center
+HTMLFONT = awakenHuge,Arial, 36, ,#000000
+HTMLMARGINS = awaken, 0,0,0,0,center
+
+IMAGE = , [ImageLink], 0, 21.5%, 100%, 36.5%, 0, PNC
+
+IF = "Character" # [Type]
+    HTMLFONT = aN, "Agency FB",14,U,#000000
+    HTMLTEXT = , [FX], 4%, 59%, 91%, 38%, #FFFFFF, 0, EF, 100, effect
+;    ELSEIF = [Sorting] = "Fey"
+;    HTMLTEXT = , [FX], 4%, 59%, 93%, 33.5%, #FFFFFF, 0, EF, 100, awakenHuge
+    ELSE
+    HTMLTEXT = , [FX], 4%, 59%, 93%, 34.25%, #FFFFFF, 0, EF, 100, effect
+ENDIF
+
+ HTMLTEXT = , [Cost], 4%, 22%, 93%, 34.25%, #FFFFFF, 0, EF, 100, effect
+
+IF = [Type]<>""
+    IF = [Type] = "Event"
+    ;TRIANGLE = , 5.75, 7, 5.75, 6, 5.95, 6.5, #FF00FF, EMPTY, 0.1
+    ENDIF
+    TEXT = ,[Type], 19%, 10.5%, 61%, 10%, center
+    
+ENDIF
+
+HTMLFONT = lb, Arial, 8, , #000000
+HTMLFONT = effect, Arial, 15, , #000000
+HTMLFONT = ie, Arial, 15,I , #000000
+
+HTMLFONT = glimText, "Arial", 15,,#000000,center
+
+save=,"[Name].png"
