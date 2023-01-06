@@ -1,11 +1,15 @@
 [base_folder]=C:\nandeck(1)
 
-HTMLIMAGE = 1, bu&,"cardTemplateImages\burpee.png",.9,.9,PM
-HTMLIMAGE = 1, xsu&,"cardTemplateImages\xsu.png",.9,.9,PM
-HTMLIMAGE = 1, jj&,"cardTemplateImages\jj.png",.9,.9,PM
-HTMLIMAGE = 1, pu&,"cardTemplateImages\pu.png",.9,.9,PM
-HTMLIMAGE = 1, lng&,"cardTemplateImages\lunge.png",.9,.9,PM
-HTMLIMAGE = 1, dpu&,"cardTemplateImages\diamondpu.png",.9,.9,PM
+HTMLIMAGE = 1, bu&,"cardTemplateImages\burpee.png",1.2,1.2,PM
+HTMLIMAGE = 1, sux&,"cardTemplateImages\xsu.png",1.2,1.2,PM
+HTMLIMAGE = 1, su&,"cardTemplateImages\su.png",1.2,1.2,PM
+HTMLIMAGE = 1, jj&,"cardTemplateImages\jj.png",1.2,1.2,PM
+HTMLIMAGE = 1, pu&,"cardTemplateImages\pu.png",1.2,1.2,PM
+HTMLIMAGE = 1, lng&,"cardTemplateImages\lunge.png",1.2,1.2,PM
+HTMLIMAGE = 1, pud&,"cardTemplateImages\diamondpu.png",1.2,1.2,PM
+HTMLIMAGE = 1, mtn&,"cardTemplateImages\mc.png",1.2,1.2,PM
+HTMLIMAGE = 1, sq&,"cardTemplateImages\sq.png",1.2,1.2,PM
+HTMLIMAGE = 1, sqj&,"cardTemplateImages\jsq.png",1.2,1.2,PM
 
 
 
@@ -14,7 +18,7 @@ HTMLIMAGE = 1, dpu&,"cardTemplateImages\diamondpu.png",.9,.9,PM
 LINKMULTI = num
 LINKNEW = <br>
 LINKFILTER = Inc <> ""
-LINK ="C:\Users\16515\Downloads\exerciseCards.xlsx"
+LINK ="C:\Users\16515\Downloads\exerciseCards (2).xlsx"
 
 ;VISUAL = ,10,10
 
@@ -25,7 +29,7 @@ FONT = Arial, 16,F , #000000
 FONT = Arial, 22,F , #000000
 TEXT = , [Name], 2%, 2%, 96%, 8%
 HTMLFONT = awaken, Arial, 22, , #000000
-HTMLFONT = awakenWP, Arial, 20, , #000000,center
+HTMLFONT = awakenWP, Arial, 26, , #000000,center
 HTMLFONT = awakenLittle, Arial, 5.5, , #000000, center
 HTMLFONT = awakenHuge,Arial, 36, ,#000000
 HTMLMARGINS = awaken, 0,0,0,0,center
@@ -41,7 +45,7 @@ IF = "Character" # [Type]
     HTMLTEXT = , [FX], 4%, 59%, 93%, 34.25%, #FFFFFF, 0, EF, 100, effect
 ENDIF
 
- HTMLTEXT = , [Cost], 4%, 22%, 93%, 34.25%, #FFFFFF, 0, EF, 100, effect
+ HTMLTEXT = , [Cost], 4%, 22%, 93%, 37.25%, #FFFFFF, 0, EF, 100, awakenWP
 
 IF = [Type]<>""
     IF = [Type] = "Event"
