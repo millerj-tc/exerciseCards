@@ -18,11 +18,15 @@ HTMLIMAGE = 1, sqj&,"cardTemplateImages\jsq.png",1.2,1.2,PM
 LINKMULTI = num
 LINKNEW = <br>
 LINKFILTER = Inc <> ""
-LINK ="C:\Users\16515\Downloads\exerciseCards (2).xlsx"
+LINK ="C:\Users\16515\Downloads\exerciseCards (3).xlsx"
 
 ;VISUAL = ,10,10
 
-
+IF = [Typeline] = "Disaster"
+rectangle=,0,0,100%,100%,#FF6666
+ELSEIF = [Typeline] = "Miracle"
+rectangle=,0,0,100%,100%,#9966CC
+ENDIF
 
 FONT = Arial, 16,F , #000000
 
@@ -30,28 +34,24 @@ FONT = Arial, 22,F , #000000
 TEXT = , [Name], 2%, 2%, 96%, 8%
 HTMLFONT = awaken, Arial, 22, , #000000
 HTMLFONT = awakenWP, Arial, 26, , #000000,center
+HTMLFONT = awakenCost, Arial, 26, , #000000,center
 HTMLFONT = awakenLittle, Arial, 5.5, , #000000, center
 HTMLFONT = awakenHuge,Arial, 36, ,#000000
 HTMLMARGINS = awaken, 0,0,0,0,center
+HTMLMARGINS = awakenCost, 0.5,0,0,0,center
 
 IMAGE = , [ImageLink], 0, 21.5%, 100%, 36.5%, 0, PNC
 
-IF = "Character" # [Type]
-    HTMLFONT = aN, "Agency FB",14,U,#000000
-    HTMLTEXT = , [FX], 4%, 59%, 91%, 38%, #FFFFFF, 0, EF, 100, effect
-;    ELSEIF = [Sorting] = "Fey"
-;    HTMLTEXT = , [FX], 4%, 59%, 93%, 33.5%, #FFFFFF, 0, EF, 100, awakenHuge
-    ELSE
-    HTMLTEXT = , [FX], 4%, 59%, 93%, 34.25%, #FFFFFF, 0, EF, 100, effect
-ENDIF
 
- HTMLTEXT = , [Cost], 4%, 22%, 93%, 37.25%, #FFFFFF, 0, EF, 100, awakenWP
+HTMLTEXT = , [FX], 4%, 59%, 93%, 38%, #FFFFFF, 0, EF, 100, awakenWP
 
-IF = [Type]<>""
-    IF = [Type] = "Event"
-    ;TRIANGLE = , 5.75, 7, 5.75, 6, 5.95, 6.5, #FF00FF, EMPTY, 0.1
-    ENDIF
-    TEXT = ,[Type], 19%, 10.5%, 61%, 10%, center
+rectangle=,4%, 22%, 93%, 17.25%,#FFA500,#FFFFFF,0.15
+HTMLTEXT = , [Cost], 4%, 22%, 93%, 17.25%, #FFFFFFFF, 0, TEF, 100, awakenCost
+
+
+IF = [Typeline]<>""
+
+HTMLTEXT = , [Typeline], 19%, 10.5%, 61%, 10%, #FFFFFF, 0, EF, 100, awakenWP
     
 ENDIF
 
