@@ -12,6 +12,7 @@ HTMLIMAGE = 1, sq&,"cardTemplateImages\sq.png",1.2,1.2,PM
 HTMLIMAGE = 1, sqj&,"cardTemplateImages\jsq.png",1.2,1.2,PM
 HTMLIMAGE = 1, pus&,"cardTemplateImages\pus.png",1.2,1.2,PM
 HTMLIMAGE = 1, sqc&,"cardTemplateImages\sqc.png",1.2,1.2,PM
+HTMLIMAGE = 1, tri&,"cardTemplateImages\tri.png",1.2,1.2,PM
 
 
 
@@ -20,7 +21,7 @@ HTMLIMAGE = 1, sqc&,"cardTemplateImages\sqc.png",1.2,1.2,PM
 LINKMULTI = num
 LINKNEW = <br>
 LINKFILTER = Inc <> ""
-LINK ="C:\Users\16515\Downloads\exerciseCards (5).xlsx"
+LINK ="C:\Users\16515\Downloads\exerciseCards (6).xlsx"
 
 ;VISUAL = ,10,10
 
